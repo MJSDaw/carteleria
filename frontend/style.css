@@ -64,12 +64,12 @@ main{
 #info-evento h3{
     text-decoration: underline;
 }
-#info-evento ul{
+ul{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#info-evento li{
+li{
     width: fit-content;
 }
 hr{
@@ -102,7 +102,7 @@ hr{
 .tarjeta-cartel h4 {
     color: white;
 }
-.cartel-votar, #participar{
+.cartel-votar, #participar, #subir, #uploadBtn{
     background-color: #FEE38B;
     color: #2387D6;
     border: black 2px solid;
@@ -116,7 +116,7 @@ hr{
 #participar {
     padding: 2% 5%;
 }
-.cartel-votar:hover, #participar:hover{
+.cartel-votar:hover, #participar:hover, #subir:hover, #uploadBtn:hover{
     cursor: pointer;
 }
 footer {
@@ -140,6 +140,45 @@ footer button {
     left: 75%;
     transform: translateX(-50%); 
 }
+
+/* Participacion*/
+#form_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#requisitos, form{
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #17639F;
+    border: solid black 2px;
+    box-shadow: 0px 2.5px 2px rgba(0, 0, 0, 0.5);
+    padding: 1vw 0;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+}
+form input{
+    border-radius: 5px;
+    width: 100%;
+    font-size: 30px;
+}
+#imagen{
+    display: none;
+}
+#subir {
+        padding: 0.4vw 2vw;
+}
 @media (min-width: 426px){
     #carteleria{
         grid-template-columns: repeat(3, 22%);
@@ -161,6 +200,24 @@ footer button {
     }
     main, #titulo-estado{
         font-size: 2.5vw;
+    }
+    #requisitos{
+        width: 40vw;
+        margin: 2.5vw;
+    }
+    form{
+        width: 30vw;
+        margin: 2.5vw;
+    }
+    form div{
+        flex-direction: row;
+    }
+    form input{
+        max-width: 15vw;
+    }
+    #form_part{
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 @media (min-width: 1200px) {

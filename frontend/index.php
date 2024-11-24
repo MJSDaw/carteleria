@@ -59,8 +59,13 @@
         </div>
     </main>
     <footer>
-        <button id="participar">Participa pulsando aquí</button>
+        <button id="participar" onclick="irParticipar()">Participa pulsando aquí</button>
         <p>Diseñado y elaborado por el 2º curso del CFGS de Desarrollo de Aplicaciones Web</p>
     </footer>
+    <script>
+        function irParticipar(){
+            window.location.href = "participar.php";
+        }
+    </script>
 </body>
 </html>

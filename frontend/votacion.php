@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votación</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +19,7 @@
             <h2>ESTADO: ABIERTO</h2>
         </div>
     </header>
-    <main>
+    <main id="form-part">
         <div id="cartel">
             <h3>ANÓNIMO</h3>
             <img src="" alt="Cartel  de ANONIMO">
@@ -30,7 +34,7 @@
                 <input type="submit" value="Votar">
             </form>
         </div>
-        <a href="index.html">Volver a la página principal</a>
+        <a href="index.php">Volver a la página principal</a>
     </main>
     <footer>
         <p>Diseñado y elaborado por el 2º curso del CFGS de Desarrollo de Aplicaciones Web</p>
