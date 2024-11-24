@@ -45,11 +45,11 @@
                     $stmt->execute();
                 
                     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                    for ($i=0; $i < 10; $i++) { 
+                    for ($i=0; $i < 8; $i++) { 
                         $output = "<div class='tarjeta-cartel'>";
                         $output .= "<h4>" . htmlspecialchars($result[0]['titulo']) . "</h4>";
                         $output .= '<img src="data:image/jpeg;base64,' . base64_encode($result[0]['imagen']) . '" alt="Cartel" />';
-                        $output .= '<button class="cartel-votar">Votar este cartel</button></div>';
+                        $output .= '<button onclick="votar()" class="cartel-votar">Votar este cartel</button></div>';
                         echo $output;
                     }
                 } catch (PDOException $e) {
@@ -65,6 +65,9 @@
     <script>
         function irParticipar(){
             window.location.href = "participar.php";
+        }
+        function votar(){
+            window.location.href = "votacion.php";
         }
     </script>
 </body>

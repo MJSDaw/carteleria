@@ -37,7 +37,13 @@
         <a href="index.php">Volver a la página principal</a>
     </main>
     <footer>
+        <button id="participar" onclick="volver()">Volver a la página principal</button>
         <p>Diseñado y elaborado por el 2º curso del CFGS de Desarrollo de Aplicaciones Web</p>
     </footer>
+    <script>
+        function volver(){
+            window.location.href = "index.php";
+        }
+    </script>
 </body>
 </html>
