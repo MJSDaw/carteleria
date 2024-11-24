@@ -1,0 +1,173 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Jomhuria';
+    font-weight: 100;
+    user-select: none;
+}
+header {
+    width: 100vw;
+    position: relative;
+    background-color: #2387D6;
+    display: flex;
+    overflow: hidden;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-image: url("../media/img-header.png");
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.2;
+    z-index: 0; 
+}
+#logo{
+    width: fit-content;
+    margin-left: 25px;
+    background-color: white;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 100%;
+    z-index: 1;
+}
+#logo img{
+    width: 10vw;
+}
+#titulo-estado{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font-size: 5vw;
+    background: linear-gradient(to top, #FEE38B, white);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    align-self: center;
+    z-index: 1;
+}
+main{
+    background-color: #FEE38B;
+    text-align: center;
+    font-size: 4.5vw;
+}
+#info-evento{
+    padding: 20px;
+    margin: 0 50px;
+}
+#info-evento h3{
+    text-decoration: underline;
+}
+#info-evento ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info-evento li{
+    width: fit-content;
+}
+hr{
+    height: 30px;
+    background-color: #2387D6;
+}
+#carteleria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    justify-content: space-evenly; 
+    padding: 5% 0;
+    height: auto; 
+}
+.tarjeta-cartel {
+    justify-self: stretch; 
+    display: flex;
+    flex-direction: column;
+    background-color: #2387D6;
+    padding: 3%;
+    align-items: center;
+    overflow: hidden; 
+    margin-bottom: 10%;
+}
+.tarjeta-cartel img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
+.tarjeta-cartel h4 {
+    color: white;
+}
+.cartel-votar, #participar{
+    background-color: #FEE38B;
+    color: #2387D6;
+    border: black 2px solid;
+    font-size: 1.2rem;
+    margin: 15px;
+    padding: 1vh 1vw;
+    width: fit-content;
+    border-radius: 9px;
+    box-shadow: 0px 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+#participar {
+    padding: 2% 5%;
+}
+.cartel-votar:hover, #participar:hover{
+    cursor: pointer;
+}
+footer {
+    background-color: #2387D6;
+    height: 30vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 2rem; 
+}
+footer p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1rem; 
+    font-size: 1rem;
+}
+footer button {
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%); 
+}
+@media (min-width: 426px){
+    #carteleria{
+        grid-template-columns: repeat(3, 22%);
+    }
+    #logo img{
+        width: 42.550px;
+    }
+    #logo{
+        padding: 8.500px;
+        margin: 21.275px;
+    }
+    main, #titulo-estado{
+        font-size: 3.5vw;
+    }
+}
+@media (min-width: 769px) {
+    #info-evento{
+        margin: 0;
+    }
+    main, #titulo-estado{
+        font-size: 2.5vw;
+    }
+}
+@media (min-width: 1200px) {
+    #carteleria{
+        grid-template-columns: repeat(4, 22%);
+    }
+    main, #titulo-estado{
+        font-size: 2vw;
+    }
+}
