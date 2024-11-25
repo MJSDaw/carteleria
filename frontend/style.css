@@ -93,6 +93,7 @@ hr{
     align-items: center;
     overflow: hidden; 
     margin-bottom: 10%;
+    border-radius: 15px;
 }
 .tarjeta-cartel img {
     width: 100%;
@@ -153,6 +154,7 @@ footer button {
     margin: auto;
     align-items: center;
     text-align: center;
+    border-radius: 15px;
 }
 form{
     display: flex;

@@ -32,7 +32,7 @@
                 <input type="text" name="cial" id="cial" required></div>
                 <div><label for="pin">PIN: </label>
                 <input type="text" name="pin" id="pin" required></div>
-                <input type="submit" value="Subir" id="subir">
+                <input type="submit" value="Votar" id="subir">
             </form>
         </div>
     </main>
@@ -47,8 +47,3 @@
     </script>
 </body>
 </html>
-
-<!-- <div id="cartel">
-            <h3>ANÓNIMO</h3>
-            <img src="" alt="Cartel  de ANONIMO">
-        </div> -->
