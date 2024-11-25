@@ -145,10 +145,11 @@ footer button {
 #form_part{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5vw 0;
 }
 #requisitos, form{
-    width: 70vw;
     margin: auto;
     align-items: center;
     text-align: center;
@@ -160,7 +161,10 @@ form{
     background-color: #17639F;
     border: solid black 2px;
     box-shadow: 0px 2.5px 2px rgba(0, 0, 0, 0.5);
+    color: #FEE38B;
     padding: 1vw 0;
+    justify-content: center;
+    width: 75vw;
 }
 form div{
     display: flex;
@@ -170,14 +174,21 @@ form div{
 }
 form input{
     border-radius: 5px;
-    width: 100%;
+    max-width: 200px;
     font-size: 30px;
+    align-self: center;
 }
 #imagen{
     display: none;
 }
 #subir {
         padding: 0.4vw 2vw;
+}
+
+/*Votacion*/
+
+#cartel img{
+    width: 90%;
 }
 @media (min-width: 426px){
     #carteleria{
@@ -193,6 +204,17 @@ form input{
     main, #titulo-estado{
         font-size: 3.5vw;
     }
+    form{
+        width: 60vw;
+    }
+}
+@media (min-width: 550px) {
+    form div{
+        flex-direction: row;
+    }
+    form{
+        width: 50vw;
+    }
 }
 @media (min-width: 769px) {
     #info-evento{
@@ -206,18 +228,20 @@ form input{
         margin: 2.5vw;
     }
     form{
-        width: 30vw;
         margin: 2.5vw;
+        width: 30vw;
     }
-    form div{
-        flex-direction: row;
-    }
+    
     form input{
         max-width: 15vw;
     }
     #form_part{
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    #cartel img{
+        width: 100%;
     }
 }
 @media (min-width: 1200px) {
